@@ -2,7 +2,7 @@
 App entry point, will capture all unhandled errors and report to user in a messagebox.
 """
 try:
-    import ctypes, os
+    import ctypes, os, sys
 
     PLATFORM_IS_WINDOWS = sys.platform.startswith("win")
 
