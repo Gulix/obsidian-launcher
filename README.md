@@ -7,7 +7,7 @@ Hopefully, Obsidian will get an option to have the native launcher exhibit this 
 I have a few vaults for work and personal and have to go through the extra process of switching to and closing the most recently used vault after I opened the desired vault.
 
 # How to Install and/or Run
-Run `pip install -r requirements.txt` to install requirements.
+Run `pip install -r requirements.txt` to install requirements.  
 *wxpython is the only nonstandard library package required.*
 
 main.py can then be ran directly from py or pyw
