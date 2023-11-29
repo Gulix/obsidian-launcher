@@ -1,4 +1,3 @@
-import os
 import wx
 
 # local imports
@@ -14,6 +13,7 @@ def get_top_left_display_rect():
 
 
 class Frame(wx.Frame):
+
     def __init__(self):
         app_width = 400
         app_height = 300
@@ -53,16 +53,16 @@ class Frame(wx.Frame):
             sz_buttons.Add(button, 0, wx.ALL, 10)
 
         if not self.vaults:
-            sz_buttons.Add(
-                wx.StaticText(panel, label="No vaults found."), 0, wx.ALL, 100
-            )
+            sz_buttons.Add(wx.StaticText(panel, label="No vaults found."), 0,
+                           wx.ALL, 100)
 
         ######################################################################
         ##                              Layout                              ##
         ######################################################################
 
         sz_main = wx.BoxSizer(wx.VERTICAL)
-        sz_main.Add(label1, 0, wx.ALIGN_CENTER | wx.LEFT | wx.RIGHT | wx.TOP, 10)
+        sz_main.Add(label1, 0, wx.ALIGN_CENTER | wx.LEFT | wx.RIGHT | wx.TOP,
+                    10)
         sz_main.Add(sz_buttons, 0, wx.ALIGN_CENTER | wx.ALL, 10)
         panel.SetSizer(sz_main)
 
@@ -77,6 +77,7 @@ class Frame(wx.Frame):
 
 
 class App(wx.App):
+
     def __init__(self):
         wx.App.__init__(self, redirect=False)
         frame = Frame()
