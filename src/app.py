@@ -42,7 +42,7 @@ class Frame(wx.Frame):
 
         panel = wx.Panel(self)
 
-        label1 = wx.StaticText(panel, label="Click an obsidian vault to open.")
+        label1 = wx.StaticText(panel, label="Click on a vault to open.")
 
         sz_buttons = wx.BoxSizer(wx.VERTICAL)
 
