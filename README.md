@@ -6,6 +6,8 @@ This utility enables the user to select a vault to open on Obsidian startup. Cur
 Hopefully, Obsidian will get an option to have the native launcher exhibit this behavior.
 I have a few vaults for work and personal and have to go through the extra process of switching to and closing the most recently used vault after I opened the desired vault.
 
+![App Screenshot](/app screenshot.png?raw=true "App Screenshot")
+
 # How to Install and/or Run
 Run `pip install -r requirements.txt` to install requirements.  
 *wxpython is the only nonstandard library package required.*
