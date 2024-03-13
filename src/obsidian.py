@@ -15,8 +15,9 @@ PLATFORM_IS_WINDOWS = sys.platform.startswith("win")
 
 def find_obsidian_config_file_path():
     if PLATFORM_IS_WINDOWS:
-        user = os.environ["HOMEPATH"]
-        path = os.path.join(user, "AppData\\Roaming\\obsidian\\obsidian.json")
+        homeDrive = os.environ["HOMEDRIVE"]
+        homePath = os.environ["HOMEPATH"]
+        path = os.path.join(homeDrive, homePath, "AppData\\Roaming\\obsidian\\obsidian.json")
     else:
         raise Exception("non-windows platform not supported")
     if os.access(path, os.W_OK):
